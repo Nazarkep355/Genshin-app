@@ -18,6 +18,7 @@ var listview : ListView = findViewById(R.id.LV)
         val Categories = arrayOf(getString(R.string.Cat_charac), getString(R.string.Categories_weap), getString(R.string.Cat_artifacts))
         val Arad = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Categories)
     listview.adapter = Arad
+        
 
         listview.setOnItemClickListener { parent, view, position, id ->
 
