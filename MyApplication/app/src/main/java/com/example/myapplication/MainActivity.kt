@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
 var listview : ListView = findViewById(R.id.LV)
         val Categories = arrayOf(getString(R.string.Cat_charac), getString(R.string.Categories_weap), getString(R.string.Cat_artifacts))
-        val Arad = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Categories)
+        val Arad = ArrayAdapter<String>(this, R.layout.textview1file,R.id.fontmonospace, Categories)
     listview.adapter = Arad
         
 
