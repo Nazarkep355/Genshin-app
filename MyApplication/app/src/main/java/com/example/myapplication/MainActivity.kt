@@ -24,8 +24,10 @@ var listview : ListView = findViewById(R.id.LV)
 
             val itemtext = parent.getItemAtPosition(position)
             when(itemtext){
-                Categories[0] -> Toast.makeText(this,Categories[0],Toast.LENGTH_LONG).show()
-
+                Categories[0] -> {
+                    val intent :Intent = Intent(this,CharelemActivity::class.java)
+                    startActivity(intent)
+                }
                 Categories[1] -> Toast.makeText(this,Categories[1],Toast.LENGTH_LONG).show()
 
                 Categories[2] -> Toast.makeText(this,Categories[2],Toast.LENGTH_LONG).show()
