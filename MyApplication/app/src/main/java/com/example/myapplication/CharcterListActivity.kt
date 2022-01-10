@@ -13,7 +13,7 @@ class CharcterListActivity : AppCompatActivity() {
         var key = "Element"
         var element =intent.getStringExtra(key)
         when(element){
-            "Dendro" -> {Maintv.text = getString(R.string.Nodendrochars)
+            "Dendro" -> {Maintv?.text = getString(R.string.Nodendrochars)
 
             }
         }
