@@ -8,23 +8,73 @@
     tools:context=".CharelemActivity">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/PyroButton"
         android:layout_width="68dp"
         android:layout_height="117dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="156dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/pyroelementinmenu_foreground" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/HydroButton"
         android:layout_width="96dp"
         android:layout_height="115dp"
         android:layout_marginTop="156dp"
-        android:layout_marginEnd="89dp"
+        android:layout_marginEnd="112dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/hydroelementinmenu_foreground" />
+
+    <ImageButton
+        android:id="@+id/ElectroButton"
+        android:layout_width="85dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/electroelementinmenu_foreground" />
+
+    <ImageButton
+        android:id="@+id/CryoButton"
+        android:layout_width="85dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cryoelementinmenu_foreground" />
+
+    <ImageButton
+        android:id="@+id/AnemoButton"
+        android:layout_width="84dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/anemoelementinmenu_foreground" />
+
+    <ImageButton
+        android:id="@+id/DendroButton"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/dendroelementinmenu_foreground" />
+
+    <ImageButton
+        android:id="@+id/GeoButton"
+        android:layout_width="98dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="396dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/GEOelementinmenu_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

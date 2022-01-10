@@ -3,4 +3,5 @@
     <string name="Categories_weap">Weapon</string>
     <string name="Cat_charac">Characters</string>
     <string name="Cat_artifacts">Artifacts</string>
+    <string name="Nodendrochars">There is no Dendro characters in game</string>
 </resources>

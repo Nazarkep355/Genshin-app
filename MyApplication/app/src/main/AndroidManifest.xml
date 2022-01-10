@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".CharcterListActivity"
+            android:exported="false" />
+        <activity
             android:name=".CharelemActivity"
             android:exported="false" />
         <activity
