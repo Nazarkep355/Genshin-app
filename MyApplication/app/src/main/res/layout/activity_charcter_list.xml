@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/MainTVinChars"
-        android:layout_width="155dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
-        android:text=""
+        android:text="Text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

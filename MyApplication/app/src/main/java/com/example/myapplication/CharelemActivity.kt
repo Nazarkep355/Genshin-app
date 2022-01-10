@@ -4,15 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class CharelemActivity : AppCompatActivity() {
-    var Pyrobut : Button? = null
-    var Hydrobut : Button? = null
-    var Electrobut : Button? = null
-    var Cryobut : Button? = null
-    var Anemobut : Button? = null
-    var Dendrobut : Button? = null
-    var Geoobut : Button? = null
+    var Pyrobut : ImageButton? = null
+    var Hydrobut : ImageButton? = null
+    var Electrobut : ImageButton? = null
+    var Cryobut : ImageButton? = null
+    var Anemobut : ImageButton? = null
+    var Dendrobut : ImageButton?= null
+    var Geoobut : ImageButton? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,13 +29,10 @@ class CharelemActivity : AppCompatActivity() {
 
 
 
-        Pyrobut?.setOnClickListener{
-
-        }
-
         Dendrobut?.setOnClickListener{
            intent = Intent(this, CharcterListActivity::class.java)
-            intent.putExtra(key, "Dendro")
+            intent.putExtra(key,"Dendro")
+            startActivity(intent)
         }
 
 

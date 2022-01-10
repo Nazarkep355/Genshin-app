@@ -69,12 +69,12 @@
 
     <ImageButton
         android:id="@+id/GeoButton"
-        android:layout_width="98dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="208dp"
+        android:layout_width="99dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="200dp"
         android:layout_marginTop="396dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/GEOelementinmenu_foreground" />
+        app:srcCompat="@mipmap/geoelement1_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
