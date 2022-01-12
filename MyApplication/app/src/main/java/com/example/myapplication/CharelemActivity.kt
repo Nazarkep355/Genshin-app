@@ -34,6 +34,9 @@ class CharelemActivity : AppCompatActivity() {
             intent.putExtra(key,"Dendro")
             startActivity(intent)
         }
+        Hydrobut?.setOnClickListener {  intent = Intent(this, CharcterListActivity::class.java)
+            intent.putExtra(key,"Hydro")
+            startActivity(intent)}
 
 
     }
