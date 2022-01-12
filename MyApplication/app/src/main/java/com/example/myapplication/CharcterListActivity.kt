@@ -18,6 +18,9 @@ class CharcterListActivity : AppCompatActivity() {
             "Dendro" -> {Maintv?.text = getString(R.string.Nodendrochars)
 
             }
+            "Hydro"->{
+                
+            }
         }
     }
 }
