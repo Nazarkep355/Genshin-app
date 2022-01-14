@@ -50,4 +50,11 @@
     <string name="Yoimiya">Ёимия</string>
     <string name="Yun_Jin">Юнь Дзи</string>
     <string name="Zhongli">Чжун Ли</string>
+    <string name="sitesearcher">https://genshin-impact.fandom.com/ru/wiki/</string>
+    <string name="elemskill">Элементальный навык</string>
+    <string name="elembrst">Взрыв стихии</string>
+    <string name="passive1">Пассивный талант 1</string>
+    <string name="passive4">Пассивный талант 2</string>
+    <string name="utpassive">Пассивный талант 3</string>
+    <string name="tallup">Материалы повышения уровня талантов</string>
 </resources>

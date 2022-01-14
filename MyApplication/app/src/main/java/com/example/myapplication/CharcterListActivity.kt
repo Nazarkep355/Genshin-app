@@ -16,7 +16,9 @@ class CharcterListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_charcter_list)
 
         for(i in 0..45)
-            chars+=Character(getString(R.string.Albedo_name+i))
+            chars+=Character(getString(R.string.Albedo_name+i), "Geo",
+                parser.Findinfo(getString(R.string.sitesearcher+ R.string.Albedo_name+i),
+                getString(R.string.elemskill),getString(R.string.elembrst)))
 
 
         val recyclerView: RecyclerView = findViewById(R.id.reclcview1)
