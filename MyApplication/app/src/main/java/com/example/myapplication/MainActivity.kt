@@ -7,6 +7,8 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +20,8 @@ var listview : ListView = findViewById(R.id.LV)
         val Categories = arrayOf(getString(R.string.Cat_charac), getString(R.string.Categories_weap), getString(R.string.Cat_artifacts))
         val Arad = ArrayAdapter<String>(this, R.layout.textview1file,R.id.fontmonospace, Categories)
     listview.adapter = Arad
-        
+
+
 
         listview.setOnItemClickListener { parent, view, position, id ->
 

@@ -7,9 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class Character(var name :String, var element: String, elemSkl : String){
-
-
-    var elemBst = String
-    var passives = String
-    }
+class Character(var name :String){
+    var element = ""
+    var rarity  = ""
+}

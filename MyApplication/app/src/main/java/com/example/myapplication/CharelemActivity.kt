@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import com.example.myapplication.parser.FindelEn
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import org.jetbrains.anko.doAsync
 
 class CharelemActivity : AppCompatActivity() {
     var Pyrobut : ImageButton? = null
@@ -26,16 +30,34 @@ class CharelemActivity : AppCompatActivity() {
         Dendrobut = findViewById(R.id.DendroButton)
         Geoobut = findViewById(R.id.GeoButton)
         var key = "Element"
+        var chars = emptyArray<Character>()
+        var text1= ""
+        intent = Intent(this, CharcterListActivity::class.java)
+          GlobalScope.launch {
+              text1 = parser.createListHttp()
+              chars = parser.createlist(text1)
+          }
 
 
 
         Dendrobut?.setOnClickListener{
-           intent = Intent(this, CharcterListActivity::class.java)
+
             intent.putExtra(key,"Dendro")
             startActivity(intent)
         }
-        Hydrobut?.setOnClickListener {  intent = Intent(this, CharcterListActivity::class.java)
+        Hydrobut?.setOnClickListener {
             intent.putExtra(key,"Hydro")
+
+
+            var Earr = emptyArray<String>()
+            var Carr = emptyArray<String>()
+            for(e in chars){
+                Earr += e.element
+                Carr += e.name
+            }
+            intent.putExtra("Charelemets",Earr)
+            intent.putExtra("Charnames", Carr)
+
             startActivity(intent)}
 
 
