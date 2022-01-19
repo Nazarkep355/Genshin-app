@@ -30,11 +30,16 @@ lateinit var lv :ListView
          val stnames =intent.getStringArrayExtra("Charnames")
          val stelements = intent.getStringArrayExtra("Charelemets")
 
-//      var chars = emptyArray<Character>()
-//      chars +=Character(stnames?.get(0) ?: "Nothing")
 
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+
+      var chars = emptyArray<Character>()
+      for(i in 0 until stnames!!.size){
+          chars += Character(stnames!![i])
+          chars[i].element = stelements!![i]
+      }
+
+//        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+//        recyclerView.layoutManager = LinearLayoutManager(this)
 
 
 
@@ -47,8 +52,11 @@ lateinit var lv :ListView
             }
             "Hydro"->{
 
-                Maintv?.text = stnames?.get(0)
-
+                var elechars = chars.filter { e -> e.element=="Hydro" }
+                var str =""
+                for (e in elechars)
+                    str+= e.name + " "
+                Maintv?.text = str
             }
 
         }
