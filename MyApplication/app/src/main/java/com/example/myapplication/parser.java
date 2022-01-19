@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -413,12 +414,13 @@ public class parser {
     }
 
 
-    static public Character[] createlist(String tmp){
-        int start = tmp.indexOf("</th></tr>\n" +
+     static public Character[] createlist(String tmp){
+         Character[] list = new Character[46];
+        try {int start = tmp.indexOf("</th></tr>\n" +
                 "<tr>\n" +
                 "<td><a href=\"/wiki/");
         tmp = tmp.substring(start);
-        Character[] list = new Character[46];
+
         for(int i=0;i<46;i++) {
 
 
@@ -441,7 +443,9 @@ public class parser {
                     "<td><a "));
             list[i] = new Character(name);
             list[i].setElement(element);
-            list[i].setRarity(rarity);}
+            list[i].setRarity(rarity);}}catch (IndexOutOfBoundsException e){
+            return new Character[0] ;
+        }
         return list;
     }
 
